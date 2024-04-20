@@ -23,13 +23,21 @@ const App = () => {
     setItemList((previous) => [...previous, newTask]);
   };
 
+  const handleDeleteTask = (taskId: number) => {
+    setItemList((previous) => {
+      return previous.filter((item) => {
+        return item.id !== taskId;
+      });
+    });
+  };
+
   return (
     <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <Header />
       <main className="px-3">
         <NewTodo onAddTodo={addTodoHandler} />
       </main>
-      <Todos tasks={itemList} />
+      <Todos tasks={itemList} onDeleteTask={handleDeleteTask} />
     </div>
   );
 };

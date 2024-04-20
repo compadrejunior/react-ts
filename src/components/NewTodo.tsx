@@ -29,7 +29,7 @@ const NewTodo: React.FC<{
     props.onAddTodo(idCount, enteredText, enteredDescription);
   };
   return (
-    <div className="container">
+    <div className="container m-3 p-3 bg-secondary rounded-3">
       <div className="row">
         <form onSubmit={submitHandler}>
           <div className="mb-3">

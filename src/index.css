@@ -1,6 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+h1,
+h2,
+h3 {
+  font-family: Rubik, sans-serif;
+  color: #fc9803;
+}
+
 body {
   /* background-color: #21252b; */
   font-family: Lato, sans-serif;
+}
+
+.btn-primary {
+  background-color: #1a140c;
+  border-color: #6b645a;
+}
+
+.btn-primary:hover {
+  background-color: #fc9803;
+  border-color: #f7ca86;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(240, 170, 20, 0.25);
+  border-color: #fc9803;
 }
